@@ -1,0 +1,28 @@
+Instructions for Scripts
+
+**Note that you'll need to replace the yourOktaDomain and yourOktaApiKey placeholders with your own values**
+
+1. User Creation
+. Note that you'll need to update the firstName, lastName, email, and password variables to reflect the user account you want to create.
+
+
+2. User Deactivation
+Replace "user-id-to-deactivate" with the ID of the user you want to deactivate.
+
+
+Importing Script to Okta.
+
+1. Log in to your Okta account and go to the "Admin" dashboard.
+2. Click on "API" and then select "Tokens" from the dropdown menu.
+3. Click on the "Create Token" button to generate a new API token.
+4. Copy the token to your clipboard as you will need it later.
+5. Next, open the automation script you want to import into Okta.
+6. Look for the section in the script that handles Okta integration and locate the API key parameter.
+7. Replace the existing API key with the API key you generated in step 
+Save the script and exit.
+8. Now, in the Okta Admin dashboard, navigate to the "Settings" tab.
+Click on "Integrations" and then select "Automation" from the dropdown menu.
+9.Click on "Create Rule" and fill in the required information, including the name, trigger event, and action to take.
+10.Under "Action", select "Run a script" and upload the automation script you edited in steps 5-7.
+11. Click "Save" to complete the import process.
+
